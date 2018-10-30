@@ -24,10 +24,9 @@
 	This version is for Node.JS, converted in 2012.
 */
 
-var fs = require('fs');
-var util = require('util');
+var fs = require('fs-extra');
 
-var isArray = Array.isArray || util.isArray; // support for older Node.js
+var isArray = Array.isArray;
 
 var xml_header = '<?xml version="1.0"?>';
 var sort_args = null;
